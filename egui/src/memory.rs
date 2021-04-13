@@ -296,7 +296,7 @@ impl Memory {
         !self.had_focus_last_frame(id) && self.has_focus(id)
     }
 
-    pub(crate) fn has_focus(&self, id: Id) -> bool {
+    pub fn has_focus(&self, id: Id) -> bool {
         self.interaction.focus.id == Some(id)
     }
 
